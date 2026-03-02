@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — OrderMatrix B2B</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background: #f6f6f7;
+        color: #202223;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.7;
+      }
+
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e1e3e5;
+        padding: 0 24px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+        background: #008060;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        flex-shrink: 0;
+      }
+
+      .logo-text {
+        font-size: 15px;
+        font-weight: 600;
+        color: #202223;
+      }
+
+      main {
+        flex: 1;
+        max-width: 760px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 48px 24px 64px;
+      }
+
+      .page-header {
+        margin-bottom: 40px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #e1e3e5;
+      }
+
+      .breadcrumb {
+        font-size: 13px;
+        color: #6d7175;
+        margin-bottom: 16px;
+      }
+
+      .breadcrumb a {
+        color: #008060;
+        text-decoration: none;
+      }
+
+      .breadcrumb a:hover {
+        text-decoration: underline;
+      }
+
+      .page-header h1 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #202223;
+        margin-bottom: 10px;
+        line-height: 1.25;
+      }
+
+      .meta {
+        font-size: 13px;
+        color: #6d7175;
+      }
+
+      .toc {
+        background: #fff;
+        border: 1px solid #e1e3e5;
+        border-radius: 10px;
+        padding: 20px 24px;
+        margin-bottom: 40px;
+      }
+
+      .toc-title {
+        font-size: 13px;
+        font-weight: 600;
+        color: #6d7175;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 12px;
+      }
+
+      .toc ol {
+        padding-left: 20px;
+      }
+
+      .toc li {
+        margin-bottom: 6px;
+      }
+
+      .toc a {
+        font-size: 14px;
+        color: #008060;
+        text-decoration: none;
+      }
+
+      .toc a:hover {
+        text-decoration: underline;
+      }
+
+      .content section {
+        background: #fff;
+        border: 1px solid #e1e3e5;
+        border-radius: 10px;
+        padding: 28px 32px;
+        margin-bottom: 16px;
+      }
+
+      .content h2 {
+        font-size: 17px;
+        font-weight: 700;
+        color: #202223;
+        margin-bottom: 14px;
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+      }
+
+      .section-num {
+        font-size: 12px;
+        font-weight: 600;
+        color: #008060;
+        background: #e3f1df;
+        padding: 2px 7px;
+        border-radius: 20px;
+        flex-shrink: 0;
+      }
+
+      .content p {
+        font-size: 14px;
+        color: #3d4043;
+        margin-bottom: 12px;
+      }
+
+      .content p:last-child {
+        margin-bottom: 0;
+      }
+
+      .content ul,
+      .content ol {
+        padding-left: 20px;
+        margin-bottom: 12px;
+      }
+
+      .content li {
+        font-size: 14px;
+        color: #3d4043;
+        margin-bottom: 6px;
+        line-height: 1.6;
+      }
+
+      .content li:last-child {
+        margin-bottom: 0;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0;
+        font-size: 13px;
+      }
+
+      .data-table th {
+        background: #f6f6f7;
+        border: 1px solid #e1e3e5;
+        padding: 8px 12px;
+        text-align: left;
+        font-weight: 600;
+        color: #3d4043;
+      }
+
+      .data-table td {
+        border: 1px solid #e1e3e5;
+        padding: 8px 12px;
+        color: #3d4043;
+        vertical-align: top;
+      }
+
+      .data-table tr:nth-child(even) td {
+        background: #fafafa;
+      }
+
+      .highlight-box {
+        background: #f0faf6;
+        border: 1px solid #b5e0cc;
+        border-radius: 8px;
+        padding: 14px 18px;
+        margin: 14px 0;
+      }
+
+      .highlight-box p {
+        font-size: 13px;
+        color: #1a7a4a;
+        margin-bottom: 0;
+      }
+
+      a.email-link {
+        color: #008060;
+        word-break: break-all;
+      }
+
+      footer {
+        background: #fff;
+        border-top: 1px solid #e1e3e5;
+        padding: 20px 24px;
+        text-align: center;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+      }
+
+      .footer-links a {
+        font-size: 13px;
+        color: #6d7175;
+        text-decoration: none;
+      }
+
+      .footer-links a:hover {
+        color: #008060;
+        text-decoration: underline;
+      }
+
+      .footer-copy {
+        font-size: 12px;
+        color: #8c9196;
+      }
+
+      @media (max-width: 600px) {
+        .content section {
+          padding: 20px;
+        }
+        .data-table {
+          font-size: 12px;
+        }
+        .data-table th,
+        .data-table td {
+          padding: 6px 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">
+        <div class="logo-icon">OM</div>
+        <span class="logo-text">OrderMatrix B2B</span>
+      </a>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a> › Privacy Policy
+        </div>
+        <h1>Privacy Policy</h1>
+        <p class="meta">
+          Effective date: March 1, 2026 &nbsp;·&nbsp; Last updated: March 1,
+          2026
+        </p>
+      </div>
+
+      <div class="toc">
+        <div class="toc-title">Table of Contents</div>
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#information-we-collect">Information We Collect</a></li>
+          <li>
+            <a href="#how-we-use-information">How We Use the Information</a>
+          </li>
+          <li><a href="#data-sharing">Data Sharing and Disclosure</a></li>
+          <li><a href="#data-storage">Data Storage and Security</a></li>
+          <li><a href="#data-retention">Data Retention</a></li>
+          <li>
+            <a href="#cookies-tracking">Cookies and Tracking Technologies</a>
+          </li>
+          <li><a href="#gdpr-rights">GDPR and Data Subject Rights</a></li>
+          <li><a href="#children">Children's Privacy</a></li>
+          <li><a href="#changes">Changes to This Policy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ol>
+      </div>
+
+      <div class="content">
+        <!-- 1. Introduction -->
+        <section id="introduction">
+          <h2><span class="section-num">1</span> Introduction</h2>
+          <p>
+            This Privacy Policy describes how
+            <strong>Juan Studio</strong> ("we", "us", or "our") collects, uses,
+            and protects information when you use the
+            <strong>OrderMatrix B2B</strong> Shopify application (the "App").
+            The App is available on the Shopify App Store and is designed to
+            streamline B2B wholesale ordering for Shopify merchants and their
+            business customers.
+          </p>
+          <p>
+            By installing or using the App, you agree to the practices described
+            in this Privacy Policy. This policy applies to:
+          </p>
+          <ul>
+            <li>
+              <strong>Merchants</strong> — Shopify store owners who install and
+              configure the App.
+            </li>
+            <li>
+              <strong>Buyers</strong> — Business customers who use the quick
+              order form embedded in the merchant's storefront.
+            </li>
+          </ul>
+          <p>
+            If you have questions about this policy, please contact us at
+            <a class="email-link" href="mailto:huan244194945@gmail.com"
+              >huan244194945@gmail.com</a
+            >.
+          </p>
+        </section>
+
+        <!-- 2. Information We Collect -->
+        <section id="information-we-collect">
+          <h2><span class="section-num">2</span> Information We Collect</h2>
+
+          <p>
+            We collect information in three ways: (a) through the Shopify API,
+            (b) directly from merchants through in-app configuration, and (c)
+            directly from buyers through the storefront order form.
+          </p>
+
+          <p><strong>2.1 Data obtained via the Shopify API</strong></p>
+          <p>
+            When a merchant grants the App access during installation, we
+            retrieve the following data from Shopify to provide the App's core
+            functionality:
+          </p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Data Type</th>
+                <th>Shopify API Scope</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Customer names, email addresses, and customer tags</td>
+                <td><code>read_customers</code></td>
+                <td>
+                  Apply customer-group pricing rules; associate orders with
+                  buyers; process wholesale applications
+                </td>
+              </tr>
+              <tr>
+                <td>Order history (line items, amounts, fulfillment status)</td>
+                <td><code>read_orders</code></td>
+                <td>
+                  Display order history to buyers; enable one-click reorder
+                </td>
+              </tr>
+              <tr>
+                <td>Draft orders</td>
+                <td><code>write_draft_orders</code></td>
+                <td>
+                  Create draft orders on behalf of buyers; support the merchant
+                  approval workflow
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Product catalog (titles, SKUs, variants, inventory, images)
+                </td>
+                <td>Via Admin GraphQL</td>
+                <td>Power the quick order search and product variant matrix</td>
+              </tr>
+              <tr>
+                <td>Online store navigation menus</td>
+                <td><code>write_online_store_navigation</code></td>
+                <td>
+                  Automatically inject a quick order link into the store's
+                  navigation
+                </td>
+              </tr>
+              <tr>
+                <td>Company accounts (Shopify B2B)</td>
+                <td><code>read_companies</code></td>
+                <td>
+                  Support Shopify Plus B2B company-level pricing (read-only)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><strong>2.2 Data provided by merchants</strong></p>
+          <p>
+            Merchants directly enter the following data into the App's admin
+            interface:
+          </p>
+          <ul>
+            <li>
+              App settings (brand color, form title, product visibility rules,
+              minimum order amounts)
+            </li>
+            <li>
+              Customer-group pricing rules and tiered discount configurations
+            </li>
+            <li>
+              Per-variant minimum order quantities (MOQ) and maximum purchase
+              limits
+            </li>
+            <li>Net Terms rules (payment terms per customer tag)</li>
+            <li>Auto-approval rules for draft orders</li>
+            <li>
+              Quotes (price replies) sent to buyers in response to Request for
+              Quote submissions
+            </li>
+          </ul>
+
+          <p><strong>2.3 Data provided by buyers (storefront users)</strong></p>
+          <p>
+            Buyers interact with the App through the quick order form embedded
+            in the merchant's storefront. The following data is collected
+            directly from buyers:
+          </p>
+          <ul>
+            <li>
+              <strong>Wholesale registration form:</strong> company name,
+              contact person name, email address, phone number, website URL, tax
+              ID / business registration number, estimated purchase volume, and
+              an optional message.
+            </li>
+            <li>
+              <strong>Request for Quote (RFQ):</strong> the product list and
+              quantities the buyer wishes to quote, along with any notes the
+              buyer includes.
+            </li>
+            <li>
+              <strong>Saved lists (Favorites):</strong> product lists saved by
+              the buyer for future reuse (stored against the buyer's Shopify
+              customer ID).
+            </li>
+            <li>
+              <strong>Order notes:</strong> any free-text notes the buyer enters
+              when submitting an order.
+            </li>
+          </ul>
+
+          <p><strong>2.4 Automatically collected behavioral data</strong></p>
+          <p>
+            When a buyer uses the quick order form, the App automatically
+            records behavioral events to power the merchant's analytics
+            dashboard:
+          </p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Data recorded</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Product search</td>
+                <td>
+                  Search query text, anonymous session ID, timestamp, shop
+                  domain
+                </td>
+              </tr>
+              <tr>
+                <td>Add to order</td>
+                <td>
+                  Product ID, variant ID, quantity, anonymous session ID,
+                  timestamp, shop domain
+                </td>
+              </tr>
+              <tr>
+                <td>Order submitted</td>
+                <td>
+                  Order amount, anonymous session ID, customer ID (if logged
+                  in), timestamp, shop domain
+                </td>
+              </tr>
+              <tr>
+                <td>Order completed</td>
+                <td>
+                  Order amount, customer ID (if logged in), timestamp, shop
+                  domain
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="highlight-box">
+            <p>
+              The anonymous session ID is generated using
+              <code>crypto.randomUUID()</code> and stored in
+              <code>sessionStorage</code> (not cookies). It is not linked to any
+              personally identifiable information unless the buyer is already
+              logged in to the merchant's store.
+            </p>
+          </div>
+        </section>
+
+        <!-- 3. How We Use the Information -->
+        <section id="how-we-use-information">
+          <h2><span class="section-num">3</span> How We Use the Information</h2>
+          <p>
+            We use the information we collect solely to provide and improve the
+            App's features:
+          </p>
+          <ul>
+            <li>
+              <strong>Quick order processing:</strong> Search for products,
+              build order rows, and submit draft orders to Shopify on behalf of
+              buyers.
+            </li>
+            <li>
+              <strong>Pricing calculation:</strong> Apply customer-group
+              discounts and tiered pricing rules based on the buyer's customer
+              tags and order quantities.
+            </li>
+            <li>
+              <strong>Order approval workflow:</strong> Present pending draft
+              orders to merchants for review, and complete or reject them
+              through the Shopify Admin.
+            </li>
+            <li>
+              <strong>Request for Quote:</strong> Store buyer RFQ submissions
+              and allow merchants to respond with a quoted price.
+            </li>
+            <li>
+              <strong>Net Terms:</strong> Determine which payment terms apply to
+              a given buyer based on their customer tags.
+            </li>
+            <li>
+              <strong>Wholesale registration:</strong> Store and present
+              registration applications for merchant review and approval.
+            </li>
+            <li>
+              <strong>Analytics dashboard:</strong> Aggregate behavioral events
+              to show the merchant a conversion funnel, top products, popular
+              search terms, and daily trends.
+            </li>
+            <li>
+              <strong>Saved lists:</strong> Allow buyers to save and reload
+              frequently ordered product lists.
+            </li>
+            <li>
+              <strong>Order history &amp; reorder:</strong> Display the buyer's
+              past orders and facilitate reordering.
+            </li>
+          </ul>
+          <p>
+            We do <strong>not</strong> use collected information for
+            advertising, profiling, or any purpose unrelated to the operation of
+            the App.
+          </p>
+        </section>
+
+        <!-- 4. Data Sharing -->
+        <section id="data-sharing">
+          <h2>
+            <span class="section-num">4</span> Data Sharing and Disclosure
+          </h2>
+          <p>
+            We do <strong>not sell, rent, or trade</strong> any personal
+            information to third parties. We share data only in the following
+            limited circumstances:
+          </p>
+          <ul>
+            <li>
+              <strong>Shopify:</strong> The App operates within the Shopify
+              platform. Data retrieved via the Shopify API is used exclusively
+              to fulfill requests back to that same Shopify store. All
+              communication with Shopify is governed by
+              <a
+                href="https://www.shopify.com/legal/privacy"
+                target="_blank"
+                rel="noopener"
+                >Shopify's Privacy Policy</a
+              >.
+            </li>
+            <li>
+              <strong>Infrastructure providers:</strong> The App is hosted on
+              cloud infrastructure in the United States. Hosting providers
+              process data only as needed to run the App and are bound by
+              confidentiality obligations.
+            </li>
+            <li>
+              <strong>Legal requirements:</strong> We may disclose information
+              if required to do so by law or in response to a valid legal
+              process (e.g., court order or subpoena).
+            </li>
+            <li>
+              <strong>Business transfer:</strong> In the event of a merger,
+              acquisition, or sale of assets, data may be transferred to the
+              acquiring party, who will be bound by this Privacy Policy.
+            </li>
+          </ul>
+        </section>
+
+        <!-- 5. Data Storage and Security -->
+        <section id="data-storage">
+          <h2><span class="section-num">5</span> Data Storage and Security</h2>
+          <p>
+            All App data (pricing rules, draft order records, wholesale
+            applications, quotes, saved lists, analytics events, and Shopify
+            OAuth session tokens) is stored in a
+            <strong>PostgreSQL database hosted in the United States</strong>.
+          </p>
+          <p>We implement the following security measures:</p>
+          <ul>
+            <li>
+              <strong>Encryption in transit:</strong> All data transmitted
+              between the App, Shopify, and buyers is encrypted using HTTPS /
+              TLS.
+            </li>
+            <li>
+              <strong>Access control:</strong> The App server runs as a non-root
+              user; database credentials are stored as environment variables,
+              not in source code.
+            </li>
+            <li>
+              <strong>API rate limiting:</strong> All public-facing API
+              endpoints enforce per-store rate limits to prevent abuse.
+            </li>
+            <li>
+              <strong>Security headers:</strong> The App sets
+              <code>X-Content-Type-Options</code>, <code>X-Frame-Options</code>,
+              <code>Referrer-Policy</code>, and
+              <code>Permissions-Policy</code> headers on all responses.
+            </li>
+            <li>
+              <strong>Webhook verification:</strong> All Shopify webhook
+              payloads are verified using HMAC-SHA256 before processing.
+            </li>
+          </ul>
+          <p>
+            While we take reasonable precautions, no method of transmission over
+            the Internet or electronic storage is 100% secure. If you believe
+            your data has been compromised, please contact us immediately at
+            <a class="email-link" href="mailto:huan244194945@gmail.com"
+              >huan244194945@gmail.com</a
+            >.
+          </p>
+        </section>
+
+        <!-- 6. Data Retention -->
+        <section id="data-retention">
+          <h2><span class="section-num">6</span> Data Retention</h2>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Data Category</th>
+                <th>Retention Period</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Analytics events (search, add, submit, complete)</td>
+                <td>90 days, then automatically deleted</td>
+              </tr>
+              <tr>
+                <td>OAuth session tokens</td>
+                <td>
+                  Active while the App is installed; deleted upon app
+                  uninstallation
+                </td>
+              </tr>
+              <tr>
+                <td>Pricing rules, settings, visibility rules</td>
+                <td>
+                  Retained for the lifetime of the App installation; deleted
+                  upon app uninstallation
+                </td>
+              </tr>
+              <tr>
+                <td>Draft order records</td>
+                <td>
+                  Retained until deleted by the merchant or app uninstallation
+                </td>
+              </tr>
+              <tr>
+                <td>Wholesale applications</td>
+                <td>
+                  Retained until deleted by the merchant or app uninstallation
+                </td>
+              </tr>
+              <tr>
+                <td>Quotes (RFQ)</td>
+                <td>
+                  Retained until deleted by the merchant or app uninstallation
+                </td>
+              </tr>
+              <tr>
+                <td>Saved lists</td>
+                <td>
+                  Retained until deleted by the buyer or app uninstallation
+                </td>
+              </tr>
+              <tr>
+                <td>Net Terms rules</td>
+                <td>
+                  Retained for the lifetime of the App installation; deleted
+                  upon app uninstallation
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            When a merchant uninstalls the App, we receive a
+            <code>app/uninstalled</code> webhook from Shopify. Upon receiving
+            this webhook, we delete the store's OAuth session. Complete deletion
+            of all store-associated data can be requested by the merchant at any
+            time — see <a href="#contact">Section 11</a>.
+          </p>
+        </section>
+
+        <!-- 7. Cookies and Tracking -->
+        <section id="cookies-tracking">
+          <h2>
+            <span class="section-num">7</span> Cookies and Tracking Technologies
+          </h2>
+          <div class="highlight-box">
+            <p>
+              <strong>We do not use cookies.</strong> The App does not set any
+              first-party or third-party cookies.
+            </p>
+          </div>
+          <p>
+            The storefront quick order form uses
+            <code>sessionStorage</code> (not cookies) to:
+          </p>
+          <ul>
+            <li>
+              Store a randomly generated, anonymous session ID for the duration
+              of the browser tab session. This ID is discarded when the tab is
+              closed.
+            </li>
+            <li>
+              Temporarily persist draft order rows so buyers do not lose their
+              work if the page is refreshed.
+            </li>
+          </ul>
+          <p>
+            We also use <code>localStorage</code> to store search history (up to
+            8 recent queries) and, for unauthenticated buyers, saved product
+            lists. This data is stored locally in the buyer's browser and is not
+            transmitted to our servers.
+          </p>
+          <p>
+            We do not use any third-party analytics services (such as Google
+            Analytics), advertising networks, or tracking pixels.
+          </p>
+        </section>
+
+        <!-- 8. GDPR -->
+        <section id="gdpr-rights">
+          <h2>
+            <span class="section-num">8</span> GDPR and Data Subject Rights
+          </h2>
+          <p>
+            We comply with the Shopify app requirements for GDPR. We have
+            implemented all three mandatory privacy webhooks required by
+            Shopify:
+          </p>
+          <ul>
+            <li>
+              <strong><code>customers/data_request</code></strong> — When a
+              Shopify store receives a data access request from a customer,
+              Shopify forwards it to us. We will compile and provide all data we
+              hold for that customer to the requesting merchant within a
+              reasonable timeframe.
+            </li>
+            <li>
+              <strong><code>customers/redact</code></strong> — Upon receiving a
+              customer redaction request, we will delete all personally
+              identifiable data we hold for that customer from our database.
+            </li>
+            <li>
+              <strong><code>shop/redact</code></strong> — Upon receiving a shop
+              redaction request (typically 48 hours after app uninstallation),
+              we will permanently delete all data associated with that store
+              from our systems.
+            </li>
+          </ul>
+          <p>
+            If you are a buyer and wish to exercise your rights under GDPR
+            (access, rectification, erasure, portability, or objection), please
+            contact the <strong>merchant</strong> whose store you used — they
+            are the data controller for your order and personal information. You
+            may also contact us directly at
+            <a class="email-link" href="mailto:huan244194945@gmail.com"
+              >huan244194945@gmail.com</a
+            >
+            and we will assist.
+          </p>
+        </section>
+
+        <!-- 9. Children -->
+        <section id="children">
+          <h2><span class="section-num">9</span> Children's Privacy</h2>
+          <p>
+            The App is designed for use by business professionals and is not
+            directed at children under the age of 13 (or the applicable minimum
+            age in the relevant jurisdiction). We do not knowingly collect
+            personal information from children. If you believe a child has
+            submitted personal information through the App, please contact us
+            and we will promptly delete it.
+          </p>
+        </section>
+
+        <!-- 10. Changes -->
+        <section id="changes">
+          <h2><span class="section-num">10</span> Changes to This Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time to reflect
+            changes in the App's features, legal requirements, or our practices.
+            When we make material changes, we will update the "Last updated"
+            date at the top of this page. We encourage you to review this policy
+            periodically.
+          </p>
+          <p>
+            If we make changes that materially affect how we handle personal
+            information, we will provide prominent notice within the App's admin
+            interface. Continued use of the App after the effective date of the
+            updated policy constitutes your acceptance of the changes.
+          </p>
+        </section>
+
+        <!-- 11. Contact -->
+        <section id="contact">
+          <h2><span class="section-num">11</span> Contact Us</h2>
+          <p>
+            If you have any questions about this Privacy Policy, wish to
+            exercise your data rights, or need to report a data-related concern,
+            please contact us:
+          </p>
+          <ul>
+            <li><strong>Developer / Data Controller:</strong> Juan Studio</li>
+            <li>
+              <strong>Email:</strong>
+              <a class="email-link" href="mailto:huan244194945@gmail.com"
+                >huan244194945@gmail.com</a
+              >
+            </li>
+            <li>
+              <strong>Response time:</strong> We aim to respond to all inquiries
+              within 5 business days.
+            </li>
+          </ul>
+          <p>
+            For data deletion or export requests, please include "Data Request"
+            in the subject line of your email along with the Shopify store
+            domain associated with your request.
+          </p>
+        </section>
+      </div>
+      <!-- /content -->
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="mailto:huan244194945@gmail.com">Support</a>
+      </div>
+      <div class="footer-copy">© 2026 Juan Studio. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
