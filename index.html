@@ -155,6 +155,167 @@
         font-weight: 500;
       }
 
+      /* ── 联系表单卡片 ── */
+      .card-support {
+        background: #fff;
+        border: 1px solid #e1e3e5;
+        border-radius: 12px;
+        padding: 24px;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        cursor: default;
+      }
+
+      .card-support:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        border-color: #c9cccf;
+      }
+
+      /* 折叠/展开动画 */
+      .contact-form-wrap {
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.25s ease;
+        overflow: hidden;
+      }
+
+      .contact-form-wrap.open {
+        grid-template-rows: 1fr;
+      }
+
+      .contact-form-inner {
+        min-height: 0;
+      }
+
+      .contact-trigger {
+        margin-top: auto;
+        padding-top: 12px;
+        font-size: 13px;
+        color: #008060;
+        font-weight: 500;
+        background: none;
+        border: none;
+        padding-left: 0;
+        cursor: pointer;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .contact-trigger:hover {
+        text-decoration: underline;
+      }
+
+      .contact-trigger .arrow {
+        display: inline-block;
+        transition: transform 0.2s ease;
+      }
+
+      .contact-trigger.active .arrow {
+        transform: rotate(90deg);
+      }
+
+      /* 表单元素 */
+      .contact-form {
+        padding-top: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .contact-field {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .contact-field label {
+        font-size: 12px;
+        font-weight: 600;
+        color: #6d7175;
+      }
+
+      .contact-field input,
+      .contact-field textarea {
+        font-family: inherit;
+        font-size: 13px;
+        color: #202223;
+        background: #f6f6f7;
+        border: 1px solid #c9cccf;
+        border-radius: 6px;
+        padding: 7px 10px;
+        outline: none;
+        resize: vertical;
+        transition:
+          border-color 0.15s,
+          box-shadow 0.15s;
+      }
+
+      .contact-field input:focus,
+      .contact-field textarea:focus {
+        border-color: #008060;
+        box-shadow: 0 0 0 2px rgba(0, 128, 96, 0.15);
+        background: #fff;
+      }
+
+      .contact-field textarea {
+        min-height: 72px;
+      }
+
+      .contact-submit {
+        font-family: inherit;
+        font-size: 13px;
+        font-weight: 600;
+        color: #fff;
+        background: #008060;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        cursor: pointer;
+        align-self: flex-start;
+        transition: background 0.15s;
+      }
+
+      .contact-submit:hover:not(:disabled) {
+        background: #006e52;
+      }
+
+      .contact-submit:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      .contact-hint {
+        font-size: 11px;
+        color: #8c9196;
+        margin-top: 2px;
+      }
+
+      .contact-success {
+        display: none;
+        background: #f0faf6;
+        border: 1px solid #b5e0cc;
+        border-radius: 8px;
+        padding: 12px 14px;
+        font-size: 13px;
+        color: #1a7a4a;
+        margin-top: 14px;
+      }
+
+      .contact-error {
+        display: none;
+        background: #fff4f4;
+        border: 1px solid #ffc9c9;
+        border-radius: 8px;
+        padding: 12px 14px;
+        font-size: 13px;
+        color: #c0392b;
+        margin-top: 14px;
+      }
+
       .features {
         background: #fff;
         border: 1px solid #e1e3e5;
@@ -252,14 +413,92 @@
           <div class="card-arrow">Read policy →</div>
         </a>
 
-        <a class="card" href="mailto:huan244194945@gmail.com">
+        <div class="card-support" id="support-card">
           <div class="card-icon">💬</div>
           <div class="card-title">Support</div>
           <div class="card-desc">
             Need help? Reach out to our support team directly.
           </div>
-          <div class="card-arrow">Contact us →</div>
-        </a>
+
+          <button
+            class="contact-trigger"
+            id="contact-trigger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="contact-form-wrap"
+          >
+            Contact us <span class="arrow" aria-hidden="true">›</span>
+          </button>
+
+          <div
+            class="contact-form-wrap"
+            id="contact-form-wrap"
+            role="region"
+            aria-label="Contact form"
+          >
+            <div class="contact-form-inner">
+              <form
+                class="contact-form"
+                id="contact-form"
+                action="https://formspree.io/f/xnjbyeep"
+                method="POST"
+              >
+                <div class="contact-field">
+                  <label for="cf-name">Name</label>
+                  <input
+                    type="text"
+                    id="cf-name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="contact-field">
+                  <label for="cf-email">Email</label>
+                  <input
+                    type="email"
+                    id="cf-email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="contact-field">
+                  <label for="cf-message">Message</label>
+                  <textarea
+                    id="cf-message"
+                    name="message"
+                    placeholder="Describe your question or issue…"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  class="contact-submit"
+                  id="contact-submit"
+                  type="submit"
+                >
+                  Send message
+                </button>
+                <p class="contact-hint">
+                  We typically reply within 1–2 business days.
+                </p>
+              </form>
+
+              <div class="contact-success" id="contact-success" role="alert">
+                ✓ Message sent! We'll get back to you within 1–2 business days.
+              </div>
+              <div class="contact-error" id="contact-error" role="alert">
+                Something went wrong. Please try again or email us at
+                <a href="mailto:huan244194945@gmail.com"
+                  >huan244194945@gmail.com</a
+                >.
+              </div>
+            </div>
+          </div>
+        </div>
 
         <a
           class="card"
@@ -336,5 +575,67 @@
       </div>
       <div class="footer-copy">© 2026 Juan Studio. All rights reserved.</div>
     </footer>
+    <script>
+      (function () {
+        var trigger = document.getElementById("contact-trigger");
+        var wrap = document.getElementById("contact-form-wrap");
+        var form = document.getElementById("contact-form");
+        var submitBtn = document.getElementById("contact-submit");
+        var successEl = document.getElementById("contact-success");
+        var errorEl = document.getElementById("contact-error");
+
+        // 展开 / 收起联系表单
+        trigger.addEventListener("click", function () {
+          var isOpen = wrap.classList.toggle("open");
+          trigger.classList.toggle("active", isOpen);
+          trigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          if (isOpen) {
+            // 自动聚焦到姓名字段
+            setTimeout(function () {
+              document.getElementById("cf-name").focus();
+            }, 260);
+          }
+        });
+
+        // 通过 fetch 提交到 Formspree（无页面跳转）
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          successEl.style.display = "none";
+          errorEl.style.display = "none";
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Sending…";
+
+          var data = new FormData(form);
+          fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: { Accept: "application/json" },
+          })
+            .then(function (res) {
+              if (res.ok) {
+                successEl.style.display = "block";
+                form.reset();
+              } else {
+                return res.json().then(function (body) {
+                  throw new Error(
+                    (body.errors || [])
+                      .map(function (err) {
+                        return err.message;
+                      })
+                      .join(", ") || "Submission failed",
+                  );
+                });
+              }
+            })
+            .catch(function () {
+              errorEl.style.display = "block";
+            })
+            .finally(function () {
+              submitBtn.disabled = false;
+              submitBtn.textContent = "Send message";
+            });
+        });
+      })();
+    </script>
   </body>
 </html>
