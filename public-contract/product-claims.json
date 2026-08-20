@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "product": "OrderMatrix B2B",
+  "releaseStatus": "private_preview",
+  "publicAvailability": {
+    "shopifyAppStore": "not_listed",
+    "publicInstallation": false,
+    "pilotApplications": false,
+    "realProcurementDataAllowed": false
+  },
+  "positioning": {
+    "headline": "Turn messy B2B purchase requests into Shopify-validated Draft Orders and RFQs.",
+    "capabilities": [
+      {
+        "id": "smart_intake",
+        "label": "Smart Intake",
+        "status": "private_preview",
+        "qualifiers": ["candidate_only", "human_review_required"]
+      },
+      {
+        "id": "shopify_native_validation",
+        "label": "Shopify-native validation",
+        "status": "private_preview",
+        "qualifiers": ["shopify_source_of_truth", "fail_closed"]
+      },
+      {
+        "id": "exception_recovery",
+        "label": "Exception recovery",
+        "status": "private_preview",
+        "qualifiers": ["preserve_blocked_rows", "rfq_fallback"]
+      }
+    ]
+  },
+  "shopifyAuthority": [
+    "product_identity",
+    "variant_identity",
+    "company_context",
+    "company_location_context",
+    "catalog_publication",
+    "contextual_price",
+    "currency",
+    "quantity_rules",
+    "payment_terms",
+    "draft_order_state",
+    "order_state"
+  ],
+  "contact": {
+    "email": "huan244194945@gmail.com",
+    "responseTargetBusinessDays": 5,
+    "sensitiveDataByEmailAllowed": false
+  },
+  "browserStorage": {
+    "authenticatedDraftTtlDays": 7,
+    "guestDraft": "session_only",
+    "companyLocationPreference": "session_only",
+    "recentSearchLimit": 8,
+    "recentSearchTtlDays": 30
+  },
+  "processors": [
+    {
+      "name": "GitHub Pages",
+      "condition": "public_website_visit",
+      "purpose": "static_site_hosting"
+    },
+    {
+      "name": "Gmail",
+      "condition": "visitor_emails_contact_address",
+      "purpose": "support_and_privacy_correspondence"
+    },
+    {
+      "name": "Google Cloud",
+      "condition": "authorized_private_preview_runtime",
+      "purpose": "application_hosting_and_runtime_processing"
+    },
+    {
+      "name": "Shopify",
+      "condition": "authorized_private_preview_app_use",
+      "purpose": "commerce_platform_and_source_of_truth"
+    },
+    {
+      "name": "Google Gemini",
+      "condition": "merchant_explicitly_enables_optional_ai_intake_and_accepts_disclosure",
+      "purpose": "candidate_only_intake_parsing"
+    }
+  ],
+  "prohibitedPublicClaims": [
+    "available on the Shopify App Store",
+    "customer group pricing",
+    "tiered or volume discounts",
+    "local MOQ or order minimum engine",
+    "local payment terms engine",
+    "wholesale registration",
+    "saved lists platform",
+    "analytics dashboard",
+    "Shopify Flow integration",
+    "POS extension",
+    "Checkout extension"
+  ],
+  "externalEvidenceRequired": [
+    "github_pages_claims_deployment_gate",
+    "legal_review",
+    "partner_dashboard_protected_customer_data_approval",
+    "ai_provider_contract_and_subprocessor_review",
+    "production_retention_and_backup_deletion",
+    "production_worker_scheduler_and_monitoring",
+    "real_store_golden_path",
+    "public_app_billing_and_token_fleet_validation"
+  ]
+}

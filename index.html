@@ -3,639 +3,423 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OrderMatrix B2B — Developer Portal</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="OrderMatrix B2B is a private-preview workflow for turning purchase requests into Shopify-validated Draft Orders and RFQs."
+    />
+    <title>OrderMatrix B2B — Private preview</title>
     <style>
       *,
       *::before,
       *::after {
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+      }
+
+      :root {
+        color-scheme: light;
+        --ink: #14201d;
+        --muted: #58655f;
+        --green: #006e52;
+        --green-dark: #004f3b;
+        --green-pale: #e9f6f1;
+        --amber-pale: #fff4d8;
+        --amber: #735600;
+        --line: #dce4e0;
+        --surface: #ffffff;
+        --background: #f4f7f5;
+      }
+
+      html {
+        scroll-behavior: smooth;
       }
 
       body {
-        font-family:
-          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-          Arial, sans-serif;
-        background: #f6f6f7;
-        color: #202223;
+        margin: 0;
         min-height: 100vh;
-        display: flex;
-        flex-direction: column;
+        background: var(--background);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.6;
       }
 
-      header {
-        background: #fff;
-        border-bottom: 1px solid #e1e3e5;
-        padding: 0 24px;
-        height: 56px;
+      a {
+        color: var(--green);
+      }
+
+      a:focus-visible {
+        outline: 3px solid rgba(0, 110, 82, 0.3);
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+
+      .site-header {
+        background: rgba(255, 255, 255, 0.96);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .header-inner,
+      main,
+      .footer-inner {
+        width: min(1080px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .header-inner {
+        min-height: 64px;
         display: flex;
         align-items: center;
-        gap: 12px;
+        justify-content: space-between;
+        gap: 20px;
       }
 
-      .logo {
-        display: flex;
+      .brand {
+        display: inline-flex;
         align-items: center;
         gap: 10px;
+        color: var(--ink);
         text-decoration: none;
-        color: inherit;
+        font-weight: 750;
       }
 
-      .logo-icon {
-        width: 32px;
-        height: 32px;
-        background: #008060;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        font-weight: 700;
+      .brand-mark {
+        width: 34px;
+        height: 34px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        background: var(--green);
+        color: white;
+        font-size: 13px;
+        letter-spacing: 0.02em;
+      }
+
+      .header-link {
         font-size: 14px;
-        flex-shrink: 0;
-      }
-
-      .logo-text {
-        font-size: 15px;
-        font-weight: 600;
-        color: #202223;
+        font-weight: 650;
+        text-decoration: none;
       }
 
       main {
-        flex: 1;
-        max-width: 800px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 48px 24px;
+        padding: 72px 0 80px;
+      }
+
+      .preview-banner {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        width: fit-content;
+        max-width: 100%;
+        margin-bottom: 24px;
+        padding: 10px 14px;
+        border: 1px solid #eed486;
+        border-radius: 10px;
+        background: var(--amber-pale);
+        color: var(--amber);
+        font-size: 14px;
+        font-weight: 650;
       }
 
       .hero {
-        text-align: center;
-        margin-bottom: 56px;
+        padding: 44px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background:
+          radial-gradient(circle at 100% 0%, #d8f2e7 0, transparent 34%),
+          var(--surface);
+        box-shadow: 0 16px 44px rgba(20, 32, 29, 0.06);
       }
 
-      .hero h1 {
-        font-size: 32px;
-        font-weight: 700;
-        color: #202223;
-        margin-bottom: 12px;
-        line-height: 1.25;
-      }
-
-      .hero p {
-        font-size: 16px;
-        color: #6d7175;
-        line-height: 1.6;
-        max-width: 480px;
-        margin: 0 auto;
-      }
-
-      .badge {
-        display: inline-block;
-        background: #e3f1df;
-        color: #1a7a4a;
-        font-size: 12px;
-        font-weight: 600;
-        padding: 2px 10px;
-        border-radius: 20px;
-        margin-bottom: 16px;
-        letter-spacing: 0.3px;
-      }
-
-      .cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 16px;
-        margin-bottom: 48px;
-      }
-
-      .card {
-        background: #fff;
-        border: 1px solid #e1e3e5;
-        border-radius: 12px;
-        padding: 24px;
-        text-decoration: none;
-        color: inherit;
-        transition:
-          box-shadow 0.15s,
-          border-color 0.15s;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-      }
-
-      .card:hover {
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-        border-color: #c9cccf;
-      }
-
-      .card-icon {
-        font-size: 24px;
-        margin-bottom: 4px;
-      }
-
-      .card-title {
-        font-size: 15px;
-        font-weight: 600;
-        color: #202223;
-      }
-
-      .card-desc {
+      .eyebrow {
+        margin: 0 0 12px;
+        color: var(--green);
         font-size: 13px;
-        color: #6d7175;
-        line-height: 1.5;
+        font-weight: 750;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
       }
 
-      .card-arrow {
-        margin-top: auto;
-        padding-top: 12px;
-        font-size: 13px;
-        color: #008060;
-        font-weight: 500;
+      h1 {
+        max-width: 780px;
+        margin: 0;
+        font-size: clamp(38px, 6vw, 64px);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
       }
 
-      /* ── 联系表单卡片 ── */
-      .card-support {
-        background: #fff;
-        border: 1px solid #e1e3e5;
-        border-radius: 12px;
-        padding: 24px;
-        color: inherit;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        cursor: default;
-      }
-
-      .card-support:hover {
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-        border-color: #c9cccf;
-      }
-
-      /* 折叠/展开动画 */
-      .contact-form-wrap {
-        display: grid;
-        grid-template-rows: 0fr;
-        transition: grid-template-rows 0.25s ease;
-        overflow: hidden;
-      }
-
-      .contact-form-wrap.open {
-        grid-template-rows: 1fr;
-      }
-
-      .contact-form-inner {
-        min-height: 0;
-      }
-
-      .contact-trigger {
-        margin-top: auto;
-        padding-top: 12px;
-        font-size: 13px;
-        color: #008060;
-        font-weight: 500;
-        background: none;
-        border: none;
-        padding-left: 0;
-        cursor: pointer;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-      }
-
-      .contact-trigger:hover {
-        text-decoration: underline;
-      }
-
-      .contact-trigger .arrow {
-        display: inline-block;
-        transition: transform 0.2s ease;
-      }
-
-      .contact-trigger.active .arrow {
-        transform: rotate(90deg);
-      }
-
-      /* 表单元素 */
-      .contact-form {
-        padding-top: 14px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .contact-field {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-      }
-
-      .contact-field label {
-        font-size: 12px;
-        font-weight: 600;
-        color: #6d7175;
-      }
-
-      .contact-field input,
-      .contact-field textarea {
-        font-family: inherit;
-        font-size: 13px;
-        color: #202223;
-        background: #f6f6f7;
-        border: 1px solid #c9cccf;
-        border-radius: 6px;
-        padding: 7px 10px;
-        outline: none;
-        resize: vertical;
-        transition:
-          border-color 0.15s,
-          box-shadow 0.15s;
-      }
-
-      .contact-field input:focus,
-      .contact-field textarea:focus {
-        border-color: #008060;
-        box-shadow: 0 0 0 2px rgba(0, 128, 96, 0.15);
-        background: #fff;
-      }
-
-      .contact-field textarea {
-        min-height: 72px;
-      }
-
-      .contact-submit {
-        font-family: inherit;
-        font-size: 13px;
-        font-weight: 600;
-        color: #fff;
-        background: #008060;
-        border: none;
-        border-radius: 6px;
-        padding: 8px 16px;
-        cursor: pointer;
-        align-self: flex-start;
-        transition: background 0.15s;
-      }
-
-      .contact-submit:hover:not(:disabled) {
-        background: #006e52;
-      }
-
-      .contact-submit:disabled {
-        opacity: 0.6;
-        cursor: not-allowed;
-      }
-
-      .contact-hint {
-        font-size: 11px;
-        color: #8c9196;
-        margin-top: 2px;
-      }
-
-      .contact-success {
-        display: none;
-        background: #f0faf6;
-        border: 1px solid #b5e0cc;
-        border-radius: 8px;
-        padding: 12px 14px;
-        font-size: 13px;
-        color: #1a7a4a;
-        margin-top: 14px;
-      }
-
-      .contact-error {
-        display: none;
-        background: #fff4f4;
-        border: 1px solid #ffc9c9;
-        border-radius: 8px;
-        padding: 12px 14px;
-        font-size: 13px;
-        color: #c0392b;
-        margin-top: 14px;
-      }
-
-      .features {
-        background: #fff;
-        border: 1px solid #e1e3e5;
-        border-radius: 12px;
-        padding: 32px;
-        margin-bottom: 48px;
-      }
-
-      .features h2 {
+      .hero-copy {
+        max-width: 720px;
+        margin: 22px 0 0;
+        color: var(--muted);
         font-size: 18px;
-        font-weight: 600;
-        color: #202223;
-        margin-bottom: 20px;
       }
 
-      .feature-grid {
+      .principle {
+        max-width: 720px;
+        margin: 24px 0 0;
+        padding: 15px 18px;
+        border-left: 4px solid var(--green);
+        border-radius: 0 8px 8px 0;
+        background: var(--green-pale);
+        color: var(--green-dark);
+        font-weight: 650;
+      }
+
+      .section-heading {
+        max-width: 720px;
+        margin: 64px 0 24px;
+      }
+
+      .section-heading h2 {
+        margin: 0 0 8px;
+        font-size: clamp(27px, 4vw, 38px);
+        line-height: 1.2;
+        letter-spacing: -0.025em;
+      }
+
+      .section-heading p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .capabilities {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 12px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
       }
 
-      .feature-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 8px;
+      .capability {
+        padding: 26px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--surface);
+      }
+
+      .capability-number {
+        display: inline-grid;
+        width: 32px;
+        height: 32px;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--green-pale);
+        color: var(--green);
         font-size: 13px;
-        color: #3d4043;
-        line-height: 1.4;
+        font-weight: 800;
       }
 
-      .feature-check {
-        color: #008060;
-        font-weight: 700;
-        flex-shrink: 0;
-        margin-top: 1px;
+      .capability h3 {
+        margin: 18px 0 8px;
+        font-size: 18px;
+      }
+
+      .capability p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .status-panel {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 30px;
+        margin-top: 64px;
+        padding: 34px;
+        border-radius: 18px;
+        background: var(--ink);
+        color: white;
+      }
+
+      .status-panel h2 {
+        margin: 0 0 10px;
+        font-size: 28px;
+        letter-spacing: -0.02em;
+      }
+
+      .status-panel p {
+        margin: 0;
+        color: #d9e3df;
+      }
+
+      .contact-box {
+        align-self: center;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .contact-box a {
+        color: white;
+        font-weight: 750;
+        overflow-wrap: anywhere;
+      }
+
+      .contact-box p + p {
+        margin-top: 8px;
+      }
+
+      .safety-note {
+        font-size: 13px;
       }
 
       footer {
-        background: #fff;
-        border-top: 1px solid #e1e3e5;
-        padding: 20px 24px;
-        text-align: center;
+        padding: 26px 0;
+        border-top: 1px solid var(--line);
+        background: var(--surface);
+      }
+
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        color: var(--muted);
+        font-size: 13px;
       }
 
       .footer-links {
         display: flex;
-        justify-content: center;
-        gap: 24px;
-        flex-wrap: wrap;
-        margin-bottom: 8px;
+        gap: 18px;
       }
 
-      .footer-links a {
-        font-size: 13px;
-        color: #6d7175;
-        text-decoration: none;
-      }
+      @media (max-width: 760px) {
+        main {
+          padding-top: 44px;
+        }
 
-      .footer-links a:hover {
-        color: #008060;
-        text-decoration: underline;
-      }
+        .hero {
+          padding: 30px 24px;
+        }
 
-      .footer-copy {
-        font-size: 12px;
-        color: #8c9196;
+        .capabilities,
+        .status-panel {
+          grid-template-columns: 1fr;
+        }
+
+        .status-panel {
+          padding: 26px;
+        }
+
+        .footer-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
       }
     </style>
   </head>
   <body>
-    <header>
-      <a class="logo" href="index.html">
-        <div class="logo-icon">OM</div>
-        <span class="logo-text">OrderMatrix B2B</span>
-      </a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="OrderMatrix B2B home">
+          <span class="brand-mark" aria-hidden="true">OM</span>
+          <span>OrderMatrix B2B</span>
+        </a>
+        <a class="header-link" href="privacy-policy.html">Privacy notice</a>
+      </div>
     </header>
 
     <main>
-      <section class="hero">
-        <span class="badge">Shopify App</span>
-        <h1>OrderMatrix B2B</h1>
-        <p>
-          A powerful B2B quick order app for Shopify — streamline wholesale
-          ordering with smart pricing, approval workflows, and more.
+      <div class="preview-banner" role="status">
+        Private preview — not publicly available or listed on the Shopify App
+        Store
+      </div>
+
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="eyebrow">Shopify-native B2B workflow</p>
+        <h1 id="hero-heading">
+          Turn messy B2B purchase requests into Shopify-validated Draft Orders
+          and RFQs.
+        </h1>
+        <p class="hero-copy">
+          OrderMatrix B2B is being developed as a focused workflow layer for
+          structured review, validation, and exception handling. It is not open
+          for public use and must not be used with real procurement data during
+          this private preview.
+        </p>
+        <p class="principle">
+          AI and parsers produce candidate rows only. Shopify remains the source
+          of truth for product identity, company context, publication, price,
+          currency, quantity rules, payment terms, and transaction state.
         </p>
       </section>
 
-      <div class="cards">
-        <a class="card" href="privacy-policy.html">
-          <div class="card-icon">🔒</div>
-          <div class="card-title">Privacy Policy</div>
-          <div class="card-desc">
-            How we collect, use, and protect your data.
-          </div>
-          <div class="card-arrow">Read policy →</div>
-        </a>
-
-        <div class="card-support" id="support-card">
-          <div class="card-icon">💬</div>
-          <div class="card-title">Support</div>
-          <div class="card-desc">
-            Need help? Reach out to our support team directly.
-          </div>
-
-          <button
-            class="contact-trigger"
-            id="contact-trigger"
-            type="button"
-            aria-expanded="false"
-            aria-controls="contact-form-wrap"
-          >
-            Contact us <span class="arrow" aria-hidden="true">›</span>
-          </button>
-
-          <div
-            class="contact-form-wrap"
-            id="contact-form-wrap"
-            role="region"
-            aria-label="Contact form"
-          >
-            <div class="contact-form-inner">
-              <form
-                class="contact-form"
-                id="contact-form"
-                action="https://formspree.io/f/xnjbyeep"
-                method="POST"
-              >
-                <div class="contact-field">
-                  <label for="cf-name">Name</label>
-                  <input
-                    type="text"
-                    id="cf-name"
-                    name="name"
-                    placeholder="Your name"
-                    required
-                    autocomplete="name"
-                  />
-                </div>
-                <div class="contact-field">
-                  <label for="cf-email">Email</label>
-                  <input
-                    type="email"
-                    id="cf-email"
-                    name="email"
-                    placeholder="you@example.com"
-                    required
-                    autocomplete="email"
-                  />
-                </div>
-                <div class="contact-field">
-                  <label for="cf-message">Message</label>
-                  <textarea
-                    id="cf-message"
-                    name="message"
-                    placeholder="Describe your question or issue…"
-                    rows="3"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  class="contact-submit"
-                  id="contact-submit"
-                  type="submit"
-                >
-                  Send message
-                </button>
-                <p class="contact-hint">
-                  We typically reply within 1–2 business days.
-                </p>
-              </form>
-
-              <div class="contact-success" id="contact-success" role="alert">
-                ✓ Message sent! We'll get back to you within 1–2 business days.
-              </div>
-              <div class="contact-error" id="contact-error" role="alert">
-                Something went wrong. Please try again or email us at
-                <a href="mailto:huan244194945@gmail.com"
-                  >huan244194945@gmail.com</a
-                >.
-              </div>
-            </div>
-          </div>
+      <section aria-labelledby="capabilities-heading">
+        <div class="section-heading">
+          <h2 id="capabilities-heading">A deliberately narrow workflow</h2>
+          <p>
+            The private preview concentrates on three connected parts of the
+            purchasing journey.
+          </p>
         </div>
 
-        <a
-          class="card"
-          href="https://apps.shopify.com"
-          target="_blank"
-          rel="noopener"
-        >
-          <div class="card-icon">🛍️</div>
-          <div class="card-title">Shopify App Store</div>
-          <div class="card-desc">
-            Install OrderMatrix B2B from the Shopify App Store.
-          </div>
-          <div class="card-arrow">View listing →</div>
-        </a>
-      </div>
+        <div class="capabilities">
+          <article class="capability">
+            <span class="capability-number" aria-hidden="true">01</span>
+            <h3>Smart Intake</h3>
+            <p>
+              Convert supported purchase-request inputs into candidate product
+              rows for buyer or merchant review. No parser output is trusted as
+              a final order decision.
+            </p>
+          </article>
 
-      <section class="features">
-        <h2>Key Features</h2>
-        <div class="feature-grid">
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Quick order form with SKU
-            search
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Bulk import via CSV / paste
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Product variant matrix
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Customer group pricing
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Tiered / volume discounts
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> MOQ &amp; order minimums
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Draft order approval workflow
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Request for Quote (RFQ)
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Net Terms payment (Net 15–90)
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Wholesale registration form
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Saved lists &amp; order history
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Analytics dashboard
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> Shopify Flow integration
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> POS &amp; Checkout extensions
-          </div>
-          <div class="feature-item">
-            <span class="feature-check">✓</span> 7 languages supported
-          </div>
+          <article class="capability">
+            <span class="capability-number" aria-hidden="true">02</span>
+            <h3>Shopify-native validation</h3>
+            <p>
+              Re-check candidates against Shopify company, catalog, contextual
+              pricing, currency, publication, and quantity rules before a
+              transaction can proceed.
+            </p>
+          </article>
+
+          <article class="capability">
+            <span class="capability-number" aria-hidden="true">03</span>
+            <h3>Exception recovery</h3>
+            <p>
+              Preserve unmatched or blocked rows for review and use an RFQ path
+              when a request cannot safely become a Shopify Draft Order.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="status-panel" aria-labelledby="status-heading">
+        <div>
+          <h2 id="status-heading">Private-preview status</h2>
+          <p>
+            OrderMatrix B2B is undergoing platform, privacy, and workflow
+            validation. There is no public installation link or application
+            form. Availability will be communicated only after the required
+            evidence and reviews are complete.
+          </p>
+        </div>
+        <div class="contact-box">
+          <p>
+            General questions:
+            <a href="mailto:huan244194945@gmail.com"
+              >huan244194945@gmail.com</a
+            >
+          </p>
+          <p>We aim to respond within 5 business days.</p>
+          <p class="safety-note">
+            Do not email customer information, order content, procurement
+            files, credentials, access tokens, or other sensitive data.
+          </p>
         </div>
       </section>
     </main>
 
     <footer>
-      <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="mailto:huan244194945@gmail.com">Support</a>
+      <div class="footer-inner">
+        <span>© 2026 Juan Studio. All rights reserved.</span>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="privacy-policy.html">Privacy notice</a>
+          <a href="mailto:huan244194945@gmail.com">Contact</a>
+        </nav>
       </div>
-      <div class="footer-copy">© 2026 Juan Studio. All rights reserved.</div>
     </footer>
-    <script>
-      (function () {
-        var trigger = document.getElementById("contact-trigger");
-        var wrap = document.getElementById("contact-form-wrap");
-        var form = document.getElementById("contact-form");
-        var submitBtn = document.getElementById("contact-submit");
-        var successEl = document.getElementById("contact-success");
-        var errorEl = document.getElementById("contact-error");
-
-        // 展开 / 收起联系表单
-        trigger.addEventListener("click", function () {
-          var isOpen = wrap.classList.toggle("open");
-          trigger.classList.toggle("active", isOpen);
-          trigger.setAttribute("aria-expanded", isOpen ? "true" : "false");
-          if (isOpen) {
-            // 自动聚焦到姓名字段
-            setTimeout(function () {
-              document.getElementById("cf-name").focus();
-            }, 260);
-          }
-        });
-
-        // 通过 fetch 提交到 Formspree（无页面跳转）
-        form.addEventListener("submit", function (e) {
-          e.preventDefault();
-          successEl.style.display = "none";
-          errorEl.style.display = "none";
-          submitBtn.disabled = true;
-          submitBtn.textContent = "Sending…";
-
-          var data = new FormData(form);
-          fetch(form.action, {
-            method: "POST",
-            body: data,
-            headers: { Accept: "application/json" },
-          })
-            .then(function (res) {
-              if (res.ok) {
-                successEl.style.display = "block";
-                form.reset();
-              } else {
-                return res.json().then(function (body) {
-                  throw new Error(
-                    (body.errors || [])
-                      .map(function (err) {
-                        return err.message;
-                      })
-                      .join(", ") || "Submission failed",
-                  );
-                });
-              }
-            })
-            .catch(function () {
-              errorEl.style.display = "block";
-            })
-            .finally(function () {
-              submitBtn.disabled = false;
-              submitBtn.textContent = "Send message";
-            });
-        });
-      })();
-    </script>
   </body>
 </html>
