@@ -74,7 +74,7 @@ if (contract && lock) {
     contract.publicAvailability?.realProcurementDataAllowed === false,
     "realProcurementDataAllowed must be false",
   );
-  expect(contract.contact?.email === "huan244194945@gmail.com", "contact email changed unexpectedly");
+  expect(contract.contact?.email === "support@juanllc.com", "contact email changed unexpectedly");
   expect(contract.contact?.responseTargetBusinessDays === 5, "response target must be 5 business days");
   expect(contract.contact?.sensitiveDataByEmailAllowed === false, "sensitive data by email must remain disallowed");
 
@@ -90,6 +90,7 @@ if (contract && lock) {
   );
 
   const approvedProcessors = [
+    "Cloudflare Email Routing",
     "GitHub Pages",
     "Gmail",
     "Google Cloud",
@@ -133,7 +134,7 @@ for (const [name, source] of [
     /<meta\s+name="robots"\s+content="noindex, nofollow"\s*\/>/i.test(source),
     `${name} must remain noindex, nofollow during private preview`,
   );
-  expectIncludes(source, "huan244194945@gmail.com", name);
+  expectIncludes(source, "support@juanllc.com", name);
   expectIncludes(source, "5 business days", name);
   expectExcludes(source, "formspree", name);
   expect(
@@ -148,7 +149,7 @@ for (const [name, source] of [
       [
         "index.html",
         "privacy-policy.html",
-        "mailto:huan244194945@gmail.com",
+        "mailto:support@juanllc.com",
       ].includes(href[1]) || href[1].startsWith("#"),
       `${name} contains an unapproved link target: ${href[1]}`,
     );

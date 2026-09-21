@@ -15,19 +15,28 @@
         "id": "smart_intake",
         "label": "Smart Intake",
         "status": "private_preview",
-        "qualifiers": ["candidate_only", "human_review_required"]
+        "qualifiers": [
+          "candidate_only",
+          "human_review_required"
+        ]
       },
       {
         "id": "shopify_native_validation",
         "label": "Shopify-native validation",
         "status": "private_preview",
-        "qualifiers": ["shopify_source_of_truth", "fail_closed"]
+        "qualifiers": [
+          "shopify_source_of_truth",
+          "fail_closed"
+        ]
       },
       {
         "id": "exception_recovery",
         "label": "Exception recovery",
         "status": "private_preview",
-        "qualifiers": ["preserve_blocked_rows", "rfq_fallback"]
+        "qualifiers": [
+          "preserve_blocked_rows",
+          "rfq_fallback"
+        ]
       }
     ]
   },
@@ -45,7 +54,7 @@
     "order_state"
   ],
   "contact": {
-    "email": "huan244194945@gmail.com",
+    "email": "support@juanllc.com",
     "responseTargetBusinessDays": 5,
     "sensitiveDataByEmailAllowed": false
   },
@@ -81,6 +90,11 @@
       "name": "Google Gemini",
       "condition": "merchant_explicitly_enables_optional_ai_intake_and_accepts_disclosure",
       "purpose": "candidate_only_intake_parsing"
+    },
+    {
+      "name": "Cloudflare Email Routing",
+      "condition": "visitor_emails_contact_address",
+      "purpose": "forward_support_and_privacy_correspondence_to_Gmail"
     }
   ],
   "prohibitedPublicClaims": [
