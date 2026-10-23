@@ -1,0 +1,73 @@
+# OrderMatrix B2B Data Processing Addendum
+
+Version: OM-MINIMUM-20261023-1
+
+## 1. Parties, scope and instructions
+
+This Addendum forms part of the identified Merchant Terms between **胡岸**, the individual Provider based in Wuhan, Hubei, China, and the Merchant accepting those Terms for its Shopify store. The Provider operates from Wuhan, Hubei, China; privacy contact is **support@juanllc.com**.
+
+Where a full postal address is required for a legal notice or an applicable contract, contact support@juanllc.com so that we can provide the appropriate postal details directly. This contact process does not limit any notice method or disclosure required by applicable law.
+
+For customer and commerce information processed on the Merchant's behalf to provide the agreed App functions, the Merchant determines the business purposes and instructions. The Provider processes that information for those functions. Documented instructions consist of this agreement, supported Merchant settings and verified requests within the agreed service. Separate processing for the Provider's own purposes is described in the Privacy Notice and is not assigned a legal role merely by calling it support or security.
+
+The Provider will use covered data only for the agreed services and their protection, not for sale, advertising or unrelated secondary use. If an instruction appears incompatible with applicable law, the Provider will inform the Merchant and suspend the affected instruction while it is resolved. Where processing is required by law contrary to an instruction, the Provider will give legally permitted notice before that processing.
+
+## 2. Processing details
+
+| Item | Scope |
+| --- | --- |
+| People | Merchant personnel, authorized buyers, company/customer contacts and people who request support |
+| Information | Necessary shop, installation and authentication identifiers; buyer/company-location context; relevant contact information; purchase candidates, products, quotes, Draft/order references; usage, security, privacy-handling and current agreement-acceptance records |
+| Activities | Authentication, scoped retrieval, validation, workflow storage, authorized Shopify actions, optional selected-input parsing, troubleshooting, security and verified privacy handling |
+| Purpose | Delivering and protecting the Merchant's selected App functions and performing the associated obligations |
+| Duration | The necessary service and handling period, subject to earlier applicable deletion duties and the category schedule in the Privacy Notice |
+
+The Merchant determines which supported inputs it supplies. Raw procurement content is not intended as a permanent input archive. Selected parsing content can include personal or confidential information if a user includes it. Linked or keyed identifiers are not treated as anonymous solely because their visible value is transformed.
+
+## 3. Recipients and international processing
+
+The Privacy Notice identifies services and relevant data flows. Services have different roles: Shopify provides the Merchant's platform; Google Cloud hosts the App infrastructure and, where AI is available and separately enabled, provides selected-input Gemini parsing through its Cloud service; GitHub Pages serves public information; Cloudflare Email Routing and consumer Gmail handle support correspondence. The Privacy Notice explains the Cloud AI global processing scope and preview API status. A listing here does not assign all of them the same legal role or authorize an unrelated disclosure.
+
+The Merchant specifically authorizes the processors directly engaged by the Provider and identified for the covered processing in the provider schedule accepted with this Addendum. Before the Provider directly adds or replaces such a processor, the Provider will identify the proposed processor, purpose and relevant safeguards and obtain the Merchant's specific written authorization, including explicit in-app acceptance where available. Affected data will not be transferred to that directly added or replacement processor before the required authorization and safeguards are in place.
+
+For Google Cloud, the Merchant also authorizes Google's existing onward subprocessors and generally authorizes subsequent onward-subprocessor changes under the notice, protection and objection arrangements in section 11 of the [Google Cloud Data Processing Addendum](https://cloud.google.com/terms/data-processing-addendum). We will forward relevant notices received from Google promptly and without undue delay to the Merchant through an available direct merchant contact. The Merchant may raise a data-protection objection by contacting support@juanllc.com promptly after the notice. We will assess the objection and applicable requirements with the Merchant; if it cannot be resolved, the affected service may need to end and the applicable return and deletion process will apply. This authorization does not waive required safeguards or any applicable right to object, and it does not authorize unrelated data use.
+
+This authorization does not classify Shopify's own platform, public-site hosting or consumer email as processors for all purposes, and it does not enable AI.
+
+Section 4 of the Privacy Notice forms the recipient and handling-location schedule for this Addendum. It distinguishes Cloud processing on our behalf from the independent platform, public-site and support-email activities. Any legally required transfer safeguards must be in place before the affected transfer; neither a Merchant location nor a server location alone establishes them.
+
+The Provider will use a service provider for Merchant Data received from Shopify only under the required agreement protecting that data at least to Shopify's required standard, limiting its use to that provider's service for this App, and requiring its security and confidentiality. This obligation covers relevant non-personal business information as well as personal information, and is distinct from the legal classification of a recipient as a processor.
+
+The Provider also remains responsible for the obligations applicable to its use of another processor. When another processor is used for covered personal information, required equivalent data protection obligations must be in place. Consumer Gmail is not represented as a processor service supplied under a Google enterprise DPA. No provider role, country restriction or cross-border safeguard is established by the location of an App server alone.
+
+## 4. Confidentiality and security
+
+The Provider will limit access to persons who need it for the agreed purpose, ensure applicable confidentiality duties, isolate store access, protect credentials and transport, and maintain appropriate incident and recovery procedures. Raw purchasing inputs and credentials are not intended to be copied into diagnostic logs.
+
+The App uses server-side store-scoped access checks and validates purchasing candidates before confirmed commerce actions. Optional AI has a separate setting and disclosure, plan limits and dispatch protections. AI suggestions do not establish product identity, price or a completed order. Unknown results are not automatically represented as success or resent. Scoped privacy handling uses installation boundaries, locks and generation checks to prevent stale work from affecting a newer installation. Privacy diagnostic events use restricted fields rather than raw purchasing content. Access to operational accounts is restricted and protected by two-step verification. Our recovery procedure requires restored copies to remain isolated until applicable later deletions have been reapplied and checked. The individual operator handles support and incident responsibilities under documented procedures. A description of these measures does not guarantee that incidents cannot occur.
+
+## 5. Requests and assistance
+
+Buyers should ordinarily address requests concerning a Merchant's customer data to that Merchant. The Provider will assist with verified access, correction, return and deletion requests within its responsibilities and the App's scope. Requests received directly are handled according to applicable authority and duties. The Provider will not disclose another Merchant's data or treat a request for one customer as authority to erase an entire store.
+
+Taking account of the processing and information available, the Provider will assist the Merchant with applicable data-subject requests, security, breach, impact-assessment and supervisory-consultation obligations. The Provider will provide information needed to demonstrate the required processing obligations and allow and contribute to audits, including inspections, where applicable law requires them. The parties will use proportionate confidentiality and security arrangements to protect other merchants' information and credentials. Document review may be used first where suitable, without replacing a legally required inspection or delaying an urgent legal obligation.
+
+## 6. Incidents
+
+The Provider will investigate relevant incidents, take reasonable containment and remediation steps, and give the Merchant required information without undue delay where applicable. Initial information may be supplemented as investigation progresses. Routine support targets do not postpone incident obligations.
+
+An actual or suspected compromise of Merchant Data will be reported to Shopify immediately after awareness and no later than 24 hours, through its required support route. The Provider will cooperate with Shopify's investigation and provide subsequent relevant information. Separate duties to the Merchant, affected individuals or authorities are governed by applicable requirements; this paragraph does not replace them with a universal 24-hour deadline.
+
+## 7. Return, deletion and copies
+
+The Provider will handle verified requests through the appropriate scoped process. A failed job, unmatched request, unknown copy or unresolved exception is not represented as completed deletion. For Merchant Data covered by Shopify's applicable deletion requirement, originals and copies are deleted within 30 days of the relevant uninstall, end of necessity or enforceable request, unless applicable law prohibits or changes that duty. Earlier applicable obligations take priority. The Provider will promptly notify Shopify if it cannot meet that requirement.
+
+The clock is not restarted by later discovery, verification or task registration. The Provider uses trusted triggers and installation boundaries to prevent an old event from deleting a newer installation incorrectly. Necessary legal exceptions must have a concrete applicable basis and be limited to their actual scope; a general future need or dispute does not itself establish an exception.
+
+The current agreement-acceptance record follows the adopted category-specific rules in the Privacy Notice. Support correspondence follows its separate manual handling procedure. Other live records, security records, backups and logs follow the category schedule in section 7 of the Privacy Notice. No mailbox review period is applied to all categories.
+
+Deletion from the App does not delete independently controlled Shopify records or a user's own browser copies. Managed backups and logs remain within applicable obligations; they are not automatically exempt. A restored copy must stay isolated until applicable later deletions have been reapplied and checked, or the restore must not be opened for ordinary use.
+
+## 8. Priority
+
+For the processing covered here, this Addendum's specific data obligations prevail over conflicting general service provisions. Applicable mandatory duties remain in force. The Privacy Notice explains actual practices and does not reduce those duties.

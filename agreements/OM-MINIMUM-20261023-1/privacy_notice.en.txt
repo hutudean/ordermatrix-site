@@ -1,0 +1,110 @@
+# OrderMatrix B2B Privacy Notice
+
+Version: OM-MINIMUM-20261023-1
+
+## 1. Who operates the service
+
+OrderMatrix B2B is operated by **胡岸**, an individual based in **Wuhan, Hubei, China**. Email: **support@juanllc.com**.
+
+Where a full postal address is required for a legal notice or an applicable contract, contact support@juanllc.com so that we can provide the appropriate postal details directly. This contact process does not limit any notice method or disclosure required by applicable law.
+
+This Notice covers the App, public information site and support correspondence. The Merchant controls its store and customer relationship. For personal information processed on the Merchant's behalf, contact the Merchant first where appropriate; we assist with requests within our responsibilities. The initial launch is offered to merchants based in the United States and Canada; merchant availability in other markets is deferred. Seven interface languages remain available: English, Chinese, German, French, Spanish, Japanese and Korean. Interface language does not expand the supported merchant markets or determine the laws applicable to a particular use. A merchant's location alone does not establish the location of every buyer or other person whose information it supplies.
+
+## 2. Information and purposes
+
+| Information | Source and use |
+| --- | --- |
+| Shop, installation and authentication references | Shopify and authenticated App interactions, for store-specific access and service operation |
+| Buyer and company-location context and necessary contact details | Shopify context and supported user input, for the relevant B2B workflow |
+| Purchase candidates, products, quotes and Draft/order references | Selected inputs and authorized Shopify interactions, for validation and confirmed purchasing workflows |
+| Usage and security information | Service operation, for entitlements, limits, security and necessary diagnosis |
+| Privacy-handling references | Verified platform notifications or requests, for scoped handling, follow-up and evidence of the actual result |
+| Current agreement-acceptance record | An authenticated administrator's explicit action, for current agreement access and minimum evidence of the version accepted |
+| Support correspondence | Your inquiry and any further information needed for answering the request and carrying out related obligations, using handling appropriate to its source, purpose and applicable protections |
+
+Only information necessary for the chosen function should be supplied. We do not use covered Merchant Data for advertising, sale, competitive benchmarking or unrelated secondary purposes. Start a support inquiry with a brief description or a synthetic example where sufficient. Do not include credentials, customer exports, original purchasing documents or other unnecessary material. We will identify any further information needed and an appropriate handling method.
+
+For customer and purchasing information handled to provide the Merchant's selected functions, the Merchant determines the purposes and lawful instructions, and we act as its processor or entrusted service provider. The Merchant is responsible for the notices and lawful basis required for those instructions; we remain responsible for our own processing obligations. We do not use that information for independent advertising, sale or unrelated profiling.
+
+We determine the limited purposes of administering our own service relationship, responding to direct support inquiries, protecting the App and handling our legal and privacy obligations. The basis depends on the particular purpose and applicable law: necessary steps at an individual's request or performance of a contract apply only where that individual is a party; a legal-obligation basis applies only to a duty that actually requires the processing; and consent is obtained where the law requires it. Where the applicable law permits legitimate interests, necessary and proportionate service administration, security and responses to business contacts may rely on those interests, balanced against the person's rights. This is not a basis for every use, and legitimate interests are not treated as a substitute for a basis required by Chinese law. Acceptance by a Merchant does not supply every affected person's consent.
+
+Depending on the law that applies, you may request access or a copy, correction, deletion, restriction or objection, portability where available, and withdrawal of consent where consent is the basis. Conditions and exceptions may apply. Contact the Merchant for data it controls, or support@juanllc.com for processing within our responsibility. We will explain proportionate verification, the relevant handling route and the reason for a refusal or limitation where required; the ordinary support target does not extend a legal deadline. You may raise a complaint with the competent authority and seek any available review or appeal. In Canada, the Office of the Privacy Commissioner or the relevant provincial authority may be competent; see its [complaint guidance](https://www.priv.gc.ca/en/report-a-concern/). In the United States, the relevant state authority may be competent; see [California's official privacy guidance](https://oag.ca.gov/privacy/ccpa).
+
+## 3. Optional AI inputs
+
+AI parsing starts disabled and requires a separate authorized choice and disclosure acknowledgement where available. It receives only content selected for that function and does not automatically access your email inbox. Review and minimize the selected material before sending it, and review the resulting candidates before a business action.
+
+Where this feature is available and enabled, selected inputs and the corresponding output are processed by Gemini through Google Cloud using the global processing scope. Global does not provide a United States-only or North America-only processing commitment. The Cloud Interactions API used for this function is currently a Preview service; the availability status of a model does not change that API status. The feature is subject to the applicable Cloud service and data-processing terms.
+
+The App requests that the interaction not be stored for later API retrieval (store:false). That setting does not disable all provider-side retention. Google may perform limited security or abuse monitoring and retain or cache relevant data under the applicable service terms and feature rules. We do not promise zero provider retention or that deleting data from the App immediately deletes every provider-held copy. You may keep AI disabled and use supported non-AI functions.
+
+## 4. Services that receive information
+
+| Service or activity | Information and purpose | Role and handling location |
+| --- | --- | --- |
+| Shopify | Store authentication and context; authorized commerce and privacy interactions | The Merchant's commerce platform. Its independently controlled platform records remain governed by its arrangements with the Merchant. |
+| Google Cloud — App infrastructure | App hosting, database and associated operational services | A service provider for the App under the applicable Cloud agreement and data-processing terms. Infrastructure and associated service copies are subject to those service arrangements; this is not a promise that every copy stays in one country. |
+| Google Cloud — optional Gemini parsing | Content selected for parsing and corresponding output; no automatic access to a user's mailbox | A service provider for the optional feature under applicable Cloud terms. The feature uses global processing and the Cloud Interactions Preview API, as described in section 3. |
+| GitHub Pages | Requests needed to deliver the public information site | Public-site hosting, distinct from the App's purchasing database. It processes website requests under its applicable hosting arrangements. |
+| Cloudflare Email Routing | Messages sent to support@juanllc.com | Routes support correspondence to the existing receiving mailbox, separately from App hosting or optional AI. |
+| Consumer Gmail | Support correspondence, message addresses, headers and attachments | Consumer email service, not Google Workspace or an enterprise processor service under a Google DPA. |
+| The individual operator in Wuhan, Hubei, China | Necessary operation, support and privacy handling | The operator can handle information from China. North American merchant or server locations do not relocate the operator. |
+
+The Google entity and contractual arrangements for Cloud services are those specified by the applicable Cloud account agreement. Where another party processes covered information on our behalf, we require the contractual protections described in the Addendum. Other services act under their own applicable arrangements for the functions described above; listing a service does not authorize an unrelated use or disclosure.
+
+Your own email provider also handles messages you send. Consumer Gmail is governed by Google's consumer Terms and Privacy Policy. Google does not offer that consumer service under a Data Processing Agreement or in the role of a data processor. Do not send App or Shopify exports, credentials or original purchasing documents to support by default. We identify the minimum additional information and an appropriate handling method if needed.
+
+Information may be processed in countries other than your own and may be subject to their lawful access requirements. We operate from China and do not promise United States-only or North America-only handling. When a specific international transfer requires additional contractual or other safeguards, we must have those safeguards in place before the affected transfer. Contact us for information about the arrangements relevant to your use.
+
+## 5. Current agreement evidence
+
+We keep one necessary current acceptance record for each current installation. It contains the trusted shop reference, installation generation, accepted document-bundle version and hash, first successful server acceptance time, authenticated-administrator action source, explicit acceptance and declared authority. It is used for current agreement access and specific service or privacy questions. It is not used for marketing, cross-store analysis or a profile of the natural person who clicked.
+
+This record does not collect a natural person's name, email, telephone, address, IP address, user agent, device fingerprint, signature, identity document, session token or purchasing content. This statement is limited to the acceptance record; it does not say that Shopify, infrastructure or other necessary service logs never handle technical identifiers.
+
+Repeated acceptance of the same current version keeps the first successful timestamp. Successful explicit acceptance of a new version replaces the prior record. If that action fails or its result is unknown, the old record is not first discarded or represented as a new acceptance. We do not keep a complete historical chain. A replaced or deleted record cannot establish whether an older version was accepted; public text archives establish document content only.
+
+Trusted uninstall immediately invalidates acceptance for that installation. The record is removed in the same controlled handling step where possible, otherwise on the first successful run of the existing reliable deletion path. Reinstallation requires new acceptance. Verified enforceable deletion or end of necessity also triggers the applicable scoped deletion process. Deleting evidence does not create new acceptance. Applicable earlier obligations and the Addendum's deletion limit govern originals and copies.
+
+## 6. Support correspondence
+
+We aim to answer ordinary inquiries within five business days. Begin with a brief description or a synthetic example where sufficient, without unnecessary material. If further information is needed, we identify its minimum scope and assess its source, purpose and applicable protections before specifying how it should be handled. That assessment does not suspend an applicable duty to respond or handle a privacy request. Correspondence stays in the existing mailbox without routine export of attachments or onward forwarding. A necessary temporary copy is managed with the same issue in an operator-controlled working location.
+
+Applicable deletion triggers and deadlines take priority over ordinary review. We record a known trigger when received and manually review outstanding handling tasks each week. That review does not begin or restart a deadline. Covered messages, attachments and known copies are identified for the relevant handling; the fact that information is in email does not exclude it from Merchant Data obligations.
+
+Where no earlier obligation applies and continued retention has a basis, ordinary correspondence is reviewed monthly once the issue has been closed for at least 90 days. Unnecessary correspondence and known temporary copies are handled for cleanup; a concrete continuing basis and next review are recorded when retention remains appropriate. This is a review threshold, not a minimum or maximum retention period, an automatic deletion promise, or a reason to delay a privacy request.
+
+Only necessary issue references, locations, dates and outcomes or reasons are used for handling records; raw correspondence is not copied merely to prove its deletion. Retention for those minimal handling records is included in the separate category schedule below. Removing a mailbox item does not establish that sender-held or provider-held copies have all disappeared.
+
+## 7. Other retention, deletion and recovery
+
+We limit retention to the relevant service, handling or protection purpose and applicable obligations. The following categories have different lifecycles; one category's time limit does not apply to every other category.
+
+| Category | Retention and deletion approach |
+| --- | --- |
+| Current agreement-acceptance record | The single current record and its replacement, uninstall and deletion rules are described in section 5. |
+| Support correspondence and temporary copies | The manual rules in section 6 apply, including earlier deletion duties and the 90-day ordinary closed-matter review threshold. |
+| Signed-in browser purchase draft | Stored for the current shop and buyer with a seven-day expiry. The App clears applicable data on explicit clearing, successful submission, invalid data or expiry when it next reads the draft. This does not promise erasure from an offline device at a fixed moment. |
+| Signed-in browser search history | Up to eight search entries with a 30-day expiry checked on reading; individual and full clearing are available. A chosen search term is sent for searching, not the entire saved history. |
+| Browser-session inputs and preferences | Guest drafts and search history, pending SKU/quantity entries and location preferences follow their session and relevant clearing lifecycle. An uncertain operation's request identifier remains for reconciliation until a definitive outcome or session end. Non-identity column preferences remain until browser storage is cleared. Browser session restoration and device-held copies are controlled by the browser as well as the user. |
+| Purchasing and workflow records | Necessary candidate, quote and order-reference fields support the selected workflow and its handling. Verified customer or whole-shop deletion uses the applicable scoped process; Shopify's independently controlled commerce records are separate. Raw selected parsing input is not maintained as a long-term input archive. |
+| Completed privacy handling | Subject details are scrubbed when the privacy job completes. Remaining completed scrubbed job metadata, acknowledged alert metadata and unused rate buckets become eligible for routine maintenance under their existing 35-day conditions. Fulfilled or failed privacy reports become eligible under their 30-day terminal-state conditions. These are maintenance thresholds, not permission to postpone an earlier applicable deletion duty or a guarantee of execution at an exact time. |
+| Unresolved work and duplicate-prevention records | Unresolved privacy jobs, unacknowledged alerts and unknown operation outcomes remain subject to follow-up rather than being silently treated as successful. Minimum duplicate-prevention and operational metadata can remain after linked customer fields or purchasing references are removed. Privacy replay markers currently have no automatic time-based expiry because they prevent old events from being applied again. This does not make them anonymous or exempt from applicable deletion duties; a different lifecycle must preserve replay protection. |
+| Usage and AI result records | A definitive consumption or release removes its usage reservation; expired reserved work is eligible for bounded cleanup. A dispatched unknown result is not automatically released or counted as success. Usage aggregates and AI receipt metadata are separate from result content and are covered by the relevant scoped shop-deletion path. The launch configuration does not enable persistence or replay of AI result bodies. |
+| Minimum manual handling evidence | Only necessary issue references, locations, dates and outcomes or reasons are used, without copying raw correspondence or full acceptance records merely to prove handling. Relevant earlier deletion duties and actual continuing necessity govern these records; a review record is not a reason to keep its source content indefinitely. |
+| Backups, recovery and infrastructure logs | Copies and logs remain subject to applicable deletion duties and access limits. A copy must stay isolated during restoration until applicable later deletions have been reapplied and checked. A number of backups or a transaction-log setting is not a guarantee that every copy expires in that number of days. |
+| Cloud AI provider copies | The separate provider handling described in section 3 applies. Disabling later interaction retrieval does not disable all security monitoring or caches, and App deletion does not itself prove deletion of every provider copy. |
+
+For Merchant Data covered by Shopify's applicable deletion requirement, the Addendum's 30-day outer limit applies from the relevant trigger, unless applicable law prohibits or changes that duty; it is not a waiting period. Earlier applicable obligations take priority. We do not restart a deadline when a request is later discovered, verified or registered. A legal exception must have a concrete applicable basis and be limited to its necessary scope.
+
+We do not represent unsuccessful or incomplete deletion as complete. Specific legal exceptions require an applicable basis and narrow scope. Backups and logs do not become exceptions just because they are backups or logs. A restored copy must not return to ordinary service before applicable subsequent deletions have been reapplied and checked.
+
+## 8. Security and privacy requests
+
+The App uses server-side store-scoped access checks and validates purchasing candidates before confirmed commerce actions. Optional AI has a separate setting and disclosure, plan limits and dispatch protections. AI suggestions do not establish product identity, price or a completed order. Unknown results are not automatically represented as success or resent. Scoped privacy handling uses installation boundaries, locks and generation checks to prevent stale work from affecting a newer installation. Privacy diagnostic events use restricted fields rather than raw purchasing content. Access to operational accounts is restricted and protected by two-step verification. Our recovery procedure requires restored copies to remain isolated until applicable later deletions have been reapplied and checked. The individual operator handles support and incident responsibilities under documented procedures. No system can guarantee that every incident is prevented. Applicable incident duties are handled separately from ordinary inquiry response targets.
+
+Contact **support@juanllc.com** to initiate a privacy inquiry with a brief description. We will identify any proportionate verification of identity, authority and scope and an appropriate handling method; do not include credentials, identity documents or customer exports in the initial inquiry. Where the Merchant controls the requested data, we work through the relevant Merchant or platform process. Section 2 explains roles and available privacy rights; applicable complaint routes are listed there.
+
+## 9. Changes
+
+We identify material changes with a new version and make the revised Notice available. Where a change also requires new agreement acceptance or a separate optional-feature choice, that action is requested separately. Updating a Notice is not blanket consent to new processing.

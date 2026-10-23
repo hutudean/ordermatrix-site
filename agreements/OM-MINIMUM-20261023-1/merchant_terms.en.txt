@@ -1,0 +1,55 @@
+# OrderMatrix B2B Merchant Terms
+
+Version: OM-MINIMUM-20261023-1
+
+## 1. Provider and agreement
+
+OrderMatrix B2B (the “App”) is provided by **胡岸**, an individual based in **Wuhan, Hubei, China** (the “Provider”, “we” or “us”). Contact us at **support@juanllc.com**. “Merchant” or “you” means the business using the App for its Shopify store.
+
+Where a full postal address is required for a legal notice or an applicable contract, contact support@juanllc.com so that we can provide the appropriate postal details directly. This contact process does not limit any notice method or disclosure required by applicable law.
+
+The Data Processing Addendum forms part of these Terms. Our Privacy Notice describes the associated processing of personal information. An authenticated store administrator must actively accept the identified Terms and Addendum, acknowledge the Privacy Notice, and declare authority to act for the Merchant before starting the App activities covered by the acceptance requirement. The confirmation is not preselected. If you do not have that authority, you must not accept for the Merchant.
+
+Acceptance of these Terms is separate from installing the App, approving an App subscription, and enabling optional AI. It is not consent to every possible use of personal information. We retain the minimum current acceptance record described in the Privacy Notice. A new installation requires new acceptance.
+
+## 2. Service and appropriate use
+
+The App assists B2B purchasing workflows, including intake of purchase candidates, validation against Shopify context, requests for quotes and supported Draft Order or order workflows. Available functions depend on the store's Shopify configuration, permissions and plan entitlements. The initial launch is offered to merchants based in the United States and Canada. Merchant availability in other markets is deferred. The App retains seven interface languages: English, Chinese, German, French, Spanish, Japanese and Korean. Interface language does not expand the supported merchant markets or establish availability of every feature in every country.
+
+You control your store, its authorized users and the information supplied to the App. You must have the necessary rights and legal basis for that information, give required notices, and submit only information necessary for the selected function. Do not submit credentials, unrelated customer exports or unnecessary sensitive information.
+
+Review candidates, quantities, prices and exceptions before confirming an action. Parser and AI results are suggestions, not authoritative product matches, prices, payment terms or completed purchases. Shopify remains the authoritative source for the store's commerce records. The App does not remove your responsibility for your products, customer relationships or purchasing decisions.
+
+Do not bypass store authorization, usage protections or another store's access boundaries. We may restrict affected use when necessary to address a compromised account, unlawful use or a material security risk, while preserving appropriate support, privacy request and exit routes.
+
+We develop, operate and support the App and are responsible for our App and our handling of Merchant Data. Shopify does not provide App support or assume responsibility for App defects or related harm unless it expressly states otherwise. Changes to, suspension of, or loss of access to Shopify services can affect App availability. Mandatory rights remain unaffected.
+
+## 3. App charges and refunds
+
+Subscription terms and charges are presented through the applicable Shopify approval flow. These Terms do not create a subscription or authorize a separate charge. Material price changes require the applicable platform approval and notice process.
+
+This refund policy concerns App charges, not payments for goods sold by the Merchant. We correct verified duplicate or erroneous App charges to the extent overcharged. Where a failure attributable to the App prevented delivery of the agreed App service, we manually assess a reasonable refund based on the affected service and charge. A credit replaces a refund only with your agreement and where supported by the platform.
+
+There is no additional unconditional refund or automatic prorated-refund entitlement under this policy. Other cases are assessed against the actual charge, this policy and applicable mandatory rights. Begin by contacting support with a brief description; do not send payment credentials or unnecessary records. If further information is needed to verify a charge, we will identify the minimum information and an appropriate handling method for its source, purpose and applicable protections. Cancellation of future charges, adjustment of unpaid charges and refund of paid charges are separate actions.
+
+## 4. Optional AI
+
+AI intake is optional and starts disabled. An authorized Merchant must separately enable it and acknowledge the applicable disclosure where the feature is available. Only content selected for that feature is submitted for parsing; the App does not automatically read the Merchant's email inbox. Remove unnecessary personal or confidential information before submission and review the resulting candidates.
+
+AI availability depends on applicable provider eligibility, data terms and supported regions. The Privacy Notice and its recipient schedule identify the service used and its handling of selected inputs. Keeping AI disabled allows use of supported non-AI functions. Neither acceptance of these Terms nor an interface language enables AI or guarantees its availability.
+
+## 5. Support, termination and data
+
+We personally maintain **support@juanllc.com** for merchant support, privacy requests and App review correspondence. Our target for ordinary inquiries is a response within five business days. Security incidents and mandatory privacy obligations follow their applicable procedures and deadlines. Start with a brief description; use a synthetic example where it is sufficient. Do not include credentials, customer exports, original purchasing documents or other unnecessary material. If more information is needed, we will identify its minimum scope and an appropriate handling method. This does not postpone our applicable response or privacy obligations.
+
+You may stop use and follow Shopify's supported cancellation or uninstall process. Billing consequences are determined separately from data deletion. Uninstall does not mean that every copy disappears instantly. The Addendum and Privacy Notice describe deletion, current acceptance records and remaining copies. Support, applicable privacy requests and required billing recovery remain available through their appropriate routes.
+
+## 6. Changes
+
+Material changes are identified by a new version and made available for review. Where renewed acceptance is required for covered new activity, we request it explicitly. Prior acceptance is not rewritten as acceptance of new text. Updating the current acceptance record after successful new acceptance does not preserve a full historical chain of a Merchant's acceptances.
+
+## 7. Applicable law and responsibility
+
+The parties may contact support to try to resolve a concern, without making that step a condition of exercising a legal right. These Terms do not add a contractual choice of governing law, exclusive court, arbitration requirement or monetary liability cap. Applicable rules determine the governing law, competent forum and responsibility of each party. No right, remedy or liability that cannot lawfully be excluded is excluded.
+
+Nothing in these Terms excludes rights, remedies or obligations that applicable law does not permit the parties to exclude. The Addendum's specific data obligations prevail over inconsistent general service wording for the processing it covers.
